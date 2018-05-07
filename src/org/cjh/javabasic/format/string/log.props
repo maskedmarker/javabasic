@@ -1,0 +1,2 @@
+#file的value值是作为java字符串的值(即""之间的值),所以对于转义字符,需要像在java中一样用\\表示.
+file=javabasic\\format\\string\\log.props

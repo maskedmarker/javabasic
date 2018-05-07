@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+(function(){
+	console.log('----------');
+	try {
+		  throw 'myException'; // js可以throw任何类型的对象,java仅仅可以throw异常类的对象
+		}
+		catch (e) {
+			var errType = Object.prototype.toString.call(e);
+			console.log('errType: ' + errType);//js可以catch到任何类型的对象,此处就是String类型的
+		    console.log(e);
+		}
+	console.log('----------');	
+	
+})()
+</script>
+</head>
+<body>
+hello world
+</body>
+</html>
